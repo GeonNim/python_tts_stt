@@ -1,0 +1,7 @@
+fastapi
+uvicorn
+vosk
+openai
+python-dotenv
+pyttsx3
+soundfile

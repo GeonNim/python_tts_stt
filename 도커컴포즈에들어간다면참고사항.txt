@@ -1,0 +1,11 @@
+version: '3.9'
+
+services:
+  stt-gpt-tts-service:
+    build: .
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./vosk-model-small-ko-0.22:/app/vosk-model-small-ko-0.22
+    environment:
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
